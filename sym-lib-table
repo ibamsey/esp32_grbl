@@ -1,0 +1,6 @@
+(sym_lib_table
+  (lib (name esp)(type Legacy)(uri C:/Users/ian/projects/Grbl_Esp32/electronics/esp3grbl/lib/ESP32-DEVKITC-32D.lib)(options "")(descr ""))
+  (lib (name ESP32GRBL)(type Legacy)(uri ${KIPRJMOD}/lib/ESP32GRBL.lib)(options "")(descr ""))
+  (lib (name az_micro_sd_card)(type Legacy)(uri ${KIPRJMOD}/az_micro_sd_card.lib)(options "")(descr ""))
+  (lib (name esp3grbl-rescue)(type Legacy)(uri ${KIPRJMOD}/esp3grbl-rescue.lib)(options "")(descr ""))
+)
