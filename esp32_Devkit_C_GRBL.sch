@@ -14,23 +14,23 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector:Screw_Terminal_01x06 J9
+L Connector:Screw_Terminal_01x04 J9
 U 1 1 61438E72
 P 3400 5500
 F 0 "J9" H 3318 5817 50  0000 C CNN
 F 1 "Y2 - Axis" H 3318 5726 50  0000 C CNN
-F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBA_2,5_6-G-5,08_1x06_P5.08mm_Horizontal" H 3400 5500 50  0001 C CNN
+F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBA_2,5_4-G-5,08_1x04_P5.08mm_Horizontal" H 3400 5500 50  0001 C CNN
 F 3 "~" H 3400 5500 50  0001 C CNN
 	1    3400 5500
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Connector:Screw_Terminal_01x06 J10
+L Connector:Screw_Terminal_01x04 J10
 U 1 1 61439483
 P 3400 6200
 F 0 "J10" H 3318 6517 50  0000 C CNN
 F 1 "x - axis" H 3318 6426 50  0000 C CNN
-F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBA_2,5_6-G-5,08_1x06_P5.08mm_Horizontal" H 3400 6200 50  0001 C CNN
+F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBA_2,5_4-G-5,08_1x04_P5.08mm_Horizontal" H 3400 6200 50  0001 C CNN
 F 3 "~" H 3400 6200 50  0001 C CNN
 	1    3400 6200
 	-1   0    0    -1  
@@ -42,12 +42,12 @@ z-dir
 Wire Wire Line
 	4500 4200 3600 4200
 $Comp
-L Connector:Screw_Terminal_01x06 J7
+L Connector:Screw_Terminal_01x04 J7
 U 1 1 61437A4A
 P 3400 4200
 F 0 "J7" H 3318 4517 50  0000 C CNN
 F 1 "Z axis" H 3318 4426 50  0000 C CNN
-F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBA_2,5_6-G-5,08_1x06_P5.08mm_Horizontal" H 3400 4200 50  0001 C CNN
+F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBA_2,5_4-G-5,08_1x04_P5.08mm_Horizontal" H 3400 4200 50  0001 C CNN
 F 3 "~" H 3400 4200 50  0001 C CNN
 	1    3400 4200
 	-1   0    0    -1  
@@ -59,12 +59,12 @@ z-step
 Wire Wire Line
 	4800 5400 3600 5400
 $Comp
-L Connector:Screw_Terminal_01x06 J8
+L Connector:Screw_Terminal_01x04 J8
 U 1 1 6143858E
 P 3400 4850
 F 0 "J8" H 3318 5167 50  0000 C CNN
 F 1 "Y1-Axis" H 3318 5076 50  0000 C CNN
-F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBA_2,5_6-G-5,08_1x06_P5.08mm_Horizontal" H 3400 4850 50  0001 C CNN
+F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBA_2,5_4-G-5,08_1x04_P5.08mm_Horizontal" H 3400 4850 50  0001 C CNN
 F 3 "~" H 3400 4850 50  0001 C CNN
 	1    3400 4850
 	-1   0    0    -1  
@@ -129,7 +129,7 @@ U 1 1 6183A3B8
 P 9750 1700
 F 0 "J12" H 10580 1696 50  0000 L CNN
 F 1 "Micro_SD_Card_Adater" H 10580 1605 50  0000 L CNN
-F 2 "" H 10900 2000 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 10900 2000 50  0001 C CNN
 F 3 "" H 9750 1700 50  0001 C CNN
 	1    9750 1700
 	1    0    0    -1  
@@ -638,23 +638,18 @@ F 3 "~" H 10500 4800 50  0001 C CNN
 	1    10500 4800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10800 5150 10500 5150
 Text GLabel 8550 5150 0    50   Input ~ 0
 Cancel
-Text GLabel 7700 2500 2    50   Input ~ 0
+Text GLabel 7600 2400 2    50   Input ~ 0
 Cancel
-Text GLabel 7700 2600 2    50   Input ~ 0
+Text GLabel 7600 2500 2    50   Input ~ 0
 Play
-Text GLabel 7700 2700 2    50   Input ~ 0
+Text GLabel 7600 2600 2    50   Input ~ 0
 Pause
 Wire Wire Line
 	7500 1700 7550 1700
 Wire Wire Line
 	7500 1800 7550 1800
-Wire Wire Line
-	10500 4950 10500 5150
-Connection ~ 10500 5150
 $Comp
 L Device:R R11
 U 1 1 61B8DF56
@@ -703,16 +698,13 @@ Play
 Text GLabel 8550 5350 0    50   Input ~ 0
 Pause
 Connection ~ 9800 5250
-Wire Wire Line
-	9050 4950 9050 5350
-Connection ~ 9050 5350
 $Comp
 L Device:C C4
 U 1 1 61BED937
 P 9050 5750
 F 0 "C4" H 9165 5796 50  0000 L CNN
 F 1 "0.1uF" H 9165 5705 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D6.0mm_W4.4mm_P5.00mm" H 9088 5600 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 9088 5600 50  0001 C CNN
 F 3 "~" H 9050 5750 50  0001 C CNN
 	1    9050 5750
 	1    0    0    -1  
@@ -723,7 +715,7 @@ U 1 1 61BEDFE7
 P 9800 5750
 F 0 "C5" H 9915 5796 50  0000 L CNN
 F 1 "0.1uF" H 9915 5705 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D6.0mm_W4.4mm_P5.00mm" H 9838 5600 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 9838 5600 50  0001 C CNN
 F 3 "~" H 9800 5750 50  0001 C CNN
 	1    9800 5750
 	1    0    0    -1  
@@ -734,13 +726,11 @@ U 1 1 61BEE6A4
 P 10500 5750
 F 0 "C7" H 10615 5796 50  0000 L CNN
 F 1 "0.1uF" H 10615 5705 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D6.0mm_W4.4mm_P5.00mm" H 10538 5600 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 10538 5600 50  0001 C CNN
 F 3 "~" H 10500 5750 50  0001 C CNN
 	1    10500 5750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10500 5150 10500 5550
 Wire Wire Line
 	9050 5600 9050 5550
 Wire Wire Line
@@ -800,18 +790,28 @@ Wire Wire Line
 Wire Wire Line
 	5200 3850 5200 6300
 Wire Wire Line
-	8400 2900 8400 3850
+	7500 2800 8400 2800
+Wire Wire Line
+	8400 2800 8400 3850
 Wire Wire Line
 	8400 3850 5200 3850
 Text Label 5350 2800 0    50   ~ 0
 GPIO_NUM_13
+Text Label 7600 2800 0    50   ~ 0
+GPIO_NUM_02
+Wire Wire Line
+	7500 2400 7600 2400
+Wire Wire Line
+	7500 2500 7600 2500
+Wire Wire Line
+	7500 2600 7600 2600
 $Comp
 L Connector:Screw_Terminal_01x02 J1
 U 1 1 61C43708
 P 700 4250
 F 0 "J1" H 618 4467 50  0000 C CNN
 F 1 "Emergency Stop" H 450 4350 50  0000 C CNN
-F 2 "Connector_Phoenix_MC_HighVoltage:PhoenixContact_MCV_1,5_2-G-5.08_1x02_P5.08mm_Vertical" H 700 4250 50  0001 C CNN
+F 2 "Connector_Phoenix_GMSTB:PhoenixContact_GMSTBA_2,5_2-G-7,62_1x02_P7.62mm_Horizontal" H 700 4250 50  0001 C CNN
 F 3 "~" H 700 4250 50  0001 C CNN
 	1    700  4250
 	-1   0    0    -1  
@@ -827,13 +827,15 @@ F 3 "~" H 2000 4500 50  0001 C CNN
 	1    2000 4500
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	2350 4500 2150 4500
 $Comp
 L Device:C C2
 U 1 1 61C4CD9F
 P 1550 4500
 F 0 "C2" H 1665 4546 50  0000 L CNN
 F 1 "1uF" H 1665 4455 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Axial_L11.0mm_D5.0mm_P18.00mm_Horizontal" H 1588 4350 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" H 1588 4350 50  0001 C CNN
 F 3 "~" H 1550 4500 50  0001 C CNN
 	1    1550 4500
 	0    1    1    0   
@@ -844,7 +846,7 @@ U 1 1 61C89072
 P 1800 4850
 F 0 "D1" H 1800 5067 50  0000 C CNN
 F 1 "D_TVS" H 1800 4976 50  0000 C CNN
-F 2 "Diode_SMD:D_2512_6332Metric" H 1800 4850 50  0001 C CNN
+F 2 "Diode_SMD:D_SMB" H 1800 4850 50  0001 C CNN
 F 3 "~" H 1800 4850 50  0001 C CNN
 	1    1800 4850
 	1    0    0    -1  
@@ -856,6 +858,8 @@ Wire Wire Line
 Wire Wire Line
 	2350 4850 2350 4500
 Connection ~ 2350 4500
+Wire Wire Line
+	1700 4500 1850 4500
 Wire Wire Line
 	1400 4500 1150 4500
 Wire Wire Line
@@ -875,7 +879,7 @@ U 1 1 61D7486A
 P 700 5400
 F 0 "J2" H 618 5617 50  0000 C CNN
 F 1 "Power Supply" H 618 5526 50  0000 C CNN
-F 2 "Connector_Phoenix_MC_HighVoltage:PhoenixContact_MCV_1,5_2-G-5.08_1x02_P5.08mm_Vertical" H 700 5400 50  0001 C CNN
+F 2 "Connector_Phoenix_GMSTB:PhoenixContact_GMSTBA_2,5_2-G-7,62_1x02_P7.62mm_Horizontal" H 700 5400 50  0001 C CNN
 F 3 "~" H 700 5400 50  0001 C CNN
 	1    700  5400
 	-1   0    0    -1  
@@ -906,7 +910,7 @@ U 1 1 61D8CB6D
 P 2050 6000
 F 0 "U5" H 2050 6242 50  0000 C CNN
 F 1 "L7805" H 2050 6151 50  0000 C CNN
-F 2 "" H 2075 5850 50  0001 L CIN
+F 2 "Package_TO_SOT_THT:TO-220F-3_Vertical" H 2075 5850 50  0001 L CIN
 F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 2050 5950 50  0001 C CNN
 	1    2050 6000
 	1    0    0    -1  
@@ -917,7 +921,7 @@ U 1 1 61D8D558
 P 2800 6300
 F 0 "C3" H 2915 6346 50  0000 L CNN
 F 1 "0.1uF" H 2915 6255 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D6.0mm_W4.4mm_P5.00mm" H 2838 6150 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 2838 6150 50  0001 C CNN
 F 3 "~" H 2800 6300 50  0001 C CNN
 	1    2800 6300
 	1    0    0    -1  
@@ -928,8 +932,8 @@ U 1 1 61D8E1D6
 P 1450 6350
 F 0 "C1" H 1565 6396 50  0000 L CNN
 F 1 "0.33uF" H 1565 6305 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Axial_L11.0mm_D5.0mm_P18.00mm_Horizontal" H 1488 6200 50  0001 C CNN
-F 3 "https://api.kemet.com/component-edge/download/specsheet/T356A334K050AT.pdf" H 1450 6350 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" H 1488 6200 50  0001 C CNN
+F 3 "~" H 1450 6350 50  0001 C CNN
 	1    1450 6350
 	1    0    0    -1  
 $EndComp
@@ -1018,7 +1022,7 @@ U 1 1 61EAB9CE
 P 10850 3550
 F 0 "J13" H 10930 3542 50  0000 L CNN
 F 1 "Probe" H 10930 3451 50  0000 L CNN
-F 2 "" H 10850 3550 50  0001 C CNN
+F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBA_2,5_2-G-5,08_1x02_P5.08mm_Horizontal" H 10850 3550 50  0001 C CNN
 F 3 "~" H 10850 3550 50  0001 C CNN
 	1    10850 3550
 	1    0    0    -1  
@@ -1038,15 +1042,17 @@ Text GLabel 9400 3550 0    50   Input ~ 0
 Probe
 Wire Wire Line
 	9400 3550 9550 3550
-Text GLabel 7700 2800 2    50   Input ~ 0
+Text GLabel 7600 2700 2    50   Input ~ 0
 Probe
+Wire Wire Line
+	7500 2700 7600 2700
 $Comp
 L Device:C C6
 U 1 1 61EE12B3
 P 10000 3750
 F 0 "C6" H 10115 3796 50  0000 L CNN
 F 1 "0.1uF" H 10115 3705 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D6.0mm_W4.4mm_P5.00mm" H 10038 3600 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 10038 3600 50  0001 C CNN
 F 3 "~" H 10000 3750 50  0001 C CNN
 	1    10000 3750
 	1    0    0    -1  
@@ -1075,7 +1081,7 @@ U 1 1 61F11DD5
 P 9700 3550
 F 0 "D6" H 9700 3767 50  0000 C CNN
 F 1 "D" H 9700 3676 50  0000 C CNN
-F 2 "Diode_THT:D_A-405_P10.16mm_Horizontal" H 9700 3550 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 9700 3550 50  0001 C CNN
 F 3 "~" H 9700 3550 50  0001 C CNN
 	1    9700 3550
 	-1   0    0    -1  
@@ -1088,7 +1094,7 @@ U 1 1 61F14CD8
 P 2700 4500
 F 0 "D2" H 2700 4717 50  0000 C CNN
 F 1 "D_Schottky" H 2700 4626 50  0000 C CNN
-F 2 "Diode_THT:D_A-405_P12.70mm_Horizontal" H 2700 4500 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:TO-277B" H 2700 4500 50  0001 C CNN
 F 3 "~" H 2700 4500 50  0001 C CNN
 	1    2700 4500
 	-1   0    0    -1  
@@ -1176,7 +1182,7 @@ U 1 1 62069EB5
 P 7500 4800
 F 0 "D3" H 7500 5017 50  0000 C CNN
 F 1 "D" H 7500 4926 50  0000 C CNN
-F 2 "Diode_THT:D_A-405_P10.16mm_Horizontal" H 7500 4800 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 7500 4800 50  0001 C CNN
 F 3 "~" H 7500 4800 50  0001 C CNN
 	1    7500 4800
 	-1   0    0    -1  
@@ -1189,7 +1195,7 @@ U 1 1 6206AC25
 P 7500 4900
 F 0 "D4" H 7500 5117 50  0000 C CNN
 F 1 "D" H 7500 5026 50  0000 C CNN
-F 2 "Diode_THT:D_A-405_P10.16mm_Horizontal" H 7500 4900 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 7500 4900 50  0001 C CNN
 F 3 "~" H 7500 4900 50  0001 C CNN
 	1    7500 4900
 	-1   0    0    -1  
@@ -1201,16 +1207,18 @@ L Device:D D5
 U 1 1 6206B4A0
 P 7500 5000
 F 0 "D5" H 7500 5217 50  0000 C CNN
-F 1 "D" H 7500 5126 50  0000 C CNN
-F 2 "Diode_THT:D_A-405_P10.16mm_Horizontal" H 7500 5000 50  0001 C CNN
-F 3 "~" H 7500 5000 50  0001 C CNN
+F 1 "GS1000FL" H 7500 5126 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 7500 5000 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1912111437_PANJIT-International-GS1002FL-R1-00001_C353853.pdf" H 7500 5000 50  0001 C CNN
 	1    7500 5000
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	7650 5000 7800 5000
-Text GLabel 7700 2400 2    50   Input ~ 0
+Text GLabel 7600 2900 2    50   Input ~ 0
 Spindle_PWM
+Wire Wire Line
+	7500 2900 7600 2900
 Text GLabel 7600 1900 2    50   Input ~ 0
 Coolant
 Wire Wire Line
@@ -1244,21 +1252,19 @@ L Switch:SW_Push SW1
 U 1 1 620FBD4C
 P 8750 5850
 F 0 "SW1" V 8796 5802 50  0000 R CNN
-F 1 "Canel" V 8705 5802 50  0000 R CNN
-F 2 "Button_Switch_THT:SW_PUSH_6mm" H 8750 6050 50  0001 C CNN
+F 1 "Cancel" V 8705 5802 50  0000 R CNN
+F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm" H 8750 6050 50  0001 C CNN
 F 3 "~" H 8750 6050 50  0001 C CNN
 	1    8750 5850
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	8550 5350 9050 5350
 $Comp
 L Switch:SW_Push SW2
 U 1 1 62134635
 P 9550 5850
 F 0 "SW2" V 9596 5802 50  0000 R CNN
 F 1 "Play" V 9505 5802 50  0000 R CNN
-F 2 "Button_Switch_THT:SW_PUSH_6mm" H 9550 6050 50  0001 C CNN
+F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm" H 9550 6050 50  0001 C CNN
 F 3 "~" H 9550 6050 50  0001 C CNN
 	1    9550 5850
 	0    -1   -1   0   
@@ -1268,8 +1274,8 @@ L Switch:SW_Push SW3
 U 1 1 6213523A
 P 10300 5850
 F 0 "SW3" V 10346 5802 50  0000 R CNN
-F 1 "SW_Push" V 10255 5802 50  0000 R CNN
-F 2 "Button_Switch_THT:SW_PUSH_6mm" H 10300 6050 50  0001 C CNN
+F 1 "Pause" V 10255 5802 50  0000 R CNN
+F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm" H 10300 6050 50  0001 C CNN
 F 3 "~" H 10300 6050 50  0001 C CNN
 	1    10300 5850
 	0    -1   -1   0   
@@ -1297,9 +1303,6 @@ Wire Wire Line
 	8750 5650 8750 5550
 Wire Wire Line
 	8750 5550 9050 5550
-Connection ~ 9050 5550
-Wire Wire Line
-	9050 5550 9050 5350
 Wire Wire Line
 	9550 5650 9550 5550
 Wire Wire Line
@@ -1315,10 +1318,6 @@ Wire Wire Line
 	8550 5250 9800 5250
 Wire Wire Line
 	9800 5250 10800 5250
-Wire Wire Line
-	9050 5350 10800 5350
-Wire Wire Line
-	8550 5150 10500 5150
 Wire Wire Line
 	9050 4600 9800 4600
 Connection ~ 9800 4600
@@ -1359,82 +1358,25 @@ Wire Wire Line
 Wire Wire Line
 	3700 4400 3700 3750
 Connection ~ 3700 4400
+Text Label 7450 7500 0    50   ~ 0
+ESP32DevKitCGRBLCNC
 Wire Wire Line
-	7950 2400 7500 2400
+	8550 5150 9050 5150
 Wire Wire Line
-	7500 2800 7700 2800
+	9050 4950 9050 5150
+Connection ~ 9050 5150
 Wire Wire Line
-	7500 2700 7700 2700
+	9050 5550 9050 5150
+Connection ~ 9050 5550
 Wire Wire Line
-	7500 2600 7700 2600
+	10500 4950 10500 5350
 Wire Wire Line
-	7500 2500 7700 2500
+	9050 5150 10800 5150
 Wire Wire Line
-	7500 2900 8400 2900
+	10500 5350 10500 5550
 Wire Wire Line
-	1700 4500 1850 4500
+	8550 5350 10500 5350
+Connection ~ 10500 5350
 Wire Wire Line
-	2350 4500 2150 4500
-$Comp
-L power:GND #PWR0101
-U 1 1 61D8540F
-P 4350 6650
-F 0 "#PWR0101" H 4350 6400 50  0001 C CNN
-F 1 "GND" H 4355 6477 50  0000 C CNN
-F 2 "" H 4350 6650 50  0001 C CNN
-F 3 "" H 4350 6650 50  0001 C CNN
-	1    4350 6650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3600 6000 4350 6000
-Wire Wire Line
-	4350 6000 4350 6650
-Wire Wire Line
-	4350 6000 4350 5300
-Wire Wire Line
-	4350 5300 3600 5300
-Connection ~ 4350 6000
-Wire Wire Line
-	4350 5300 4350 4650
-Connection ~ 4350 5300
-Wire Wire Line
-	3600 4000 4350 4000
-Wire Wire Line
-	4350 4000 4350 4650
-Connection ~ 4350 4650
-Wire Wire Line
-	4350 4650 3600 4650
-$Comp
-L power:+12V #PWR0102
-U 1 1 61DC72B3
-P 4100 3750
-F 0 "#PWR0102" H 4100 3600 50  0001 C CNN
-F 1 "+12V" H 4115 3923 50  0000 C CNN
-F 2 "" H 4100 3750 50  0001 C CNN
-F 3 "" H 4100 3750 50  0001 C CNN
-	1    4100 3750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3600 4500 4100 4500
-Wire Wire Line
-	3600 5150 4100 5150
-Wire Wire Line
-	4100 3750 4100 4500
-Connection ~ 4100 4500
-Wire Wire Line
-	3600 5800 4100 5800
-Wire Wire Line
-	4100 4500 4100 5150
-Connection ~ 4100 5150
-Wire Wire Line
-	3600 6500 4100 6500
-Wire Wire Line
-	4100 5150 4100 5800
-Connection ~ 4100 5800
-Wire Wire Line
-	4100 5800 4100 6500
-Text Label 2150 4250 0    50   ~ 0
-12VDC
+	10500 5350 10800 5350
 $EndSCHEMATC
