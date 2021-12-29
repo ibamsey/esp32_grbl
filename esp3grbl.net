@@ -1,8 +1,8 @@
 (export (version D)
   (design
-    (source C:\Users\Ian\Projects\esp32_grbl\esp3grbl.sch)
-    (date "27/12/2021 14:57:46")
-    (tool "Eeschema (5.1.12)-1")
+    (source C:\Users\ian\projects\esp32_grbl_electronics\esp32_grbl-1\esp3grbl.sch)
+    (date "29/12/2021 10:47:03")
+    (tool "Eeschema (5.1.10)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
         (title)
@@ -580,9 +580,9 @@
     (library (logical Switch)
       (uri "C:\\Program Files\\KiCad\\share\\kicad\\library/Switch.lib"))
     (library (logical az_micro_sd_card)
-      (uri C:\Users\Ian\Projects\esp32_grbl/az_micro_sd_card.lib))
+      (uri C:\Users\ian\projects\esp32_grbl_electronics\esp32_grbl-1/az_micro_sd_card.lib))
     (library (logical esp3grbl-rescue)
-      (uri C:\Users\Ian\Projects\esp32_grbl/esp3grbl-rescue.lib)))
+      (uri C:\Users\ian\projects\esp32_grbl_electronics\esp32_grbl-1/esp3grbl-rescue.lib)))
   (nets
     (net (code 1) (name GND)
       (node (ref SW3) (pin 1))
